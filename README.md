@@ -19,4 +19,4 @@
 > 
 ## NLP
 > * seq2seq
-> * 
+> * taransformer
