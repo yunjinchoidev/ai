@@ -15,10 +15,11 @@
 > * seq2seq
 > * Transformer
 >   * seq2seq 모델을 기반으로 하되, RNN 기법이 아니라 Attention 이용하는 모델
+>   * 전이학습 모델
 > * Attention
-> * Encoder Decoder
-> * 
+> * Encoder Decoder 모델
 > * BERT
+>   *  Bidirectional Encoder Representaions from Transformers 
 >   * 양방향 전이 학습 모델 
 >   * 이미 구현된 모델에 커스텀 fine tuning => 좋은 성능 기대
 > * 전이 학습
