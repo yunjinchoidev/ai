@@ -1,3 +1,3 @@
-# Scikit-learn
-> * 매우 오래된 파이썬 머신러닝 패키지
-> * 
+# Numpy
+> * 100 개 엑서사이즈
+> * https://github.com/rougier/numpy-100
