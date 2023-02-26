@@ -1,0 +1,282 @@
+# NAVER_boostcamp_AITech_2nd_interview_question_CS
+- Reference 이외의 질문들은 여러 면접시 직접 받은 중복되지 않은 질문들도 섞여있습니다. 
+
+## CS
+
+### Operating System
+- 운영체제란
+- 프로세스와 스레드의 차이(Process vs Thread)를 알려주세요.
+    - 프로그램(Program)
+    - 프로세서(Processor)
+- 멀티 프로세스 대신 멀티 스레드를 사용하는 이유를 설명해주세요.
+- 사용자 수준 스레드와 커널 수준 스레드의 차이를 설명해주세요.
+- 프로세스 주소공간
+- Thread-safe에 대해 설명해주세요. (hint: critical section)
+- 인터럽트(Interrupt)
+- 시스템콜(System call)
+- 파일 시스템
+- 캐시의 지역성에 대해 설명해주세요.
+    - locality
+    - cahing line
+- 동기화 객체의 종류
+- 뮤텍스와 세마포어의 차이를 설명해주세요.
+- 스케줄러가 무엇이고, 단기/중기/장기로 나누는 기준에 대해 설명해주세요.
+- CPU 스케줄러인 FCFS, SJF, SRTF, Priority Scheduling, RR에 대해 간략히 설명해주세요.
+- 동기와 비동기의 차이를 설명해주세요.
+- 메모리(Memory)
+- 메모리 관리 전략에는 무엇이 있는지 간략히 설명해주세요.
+- 페이징 & 세그멘테이션(PDF)
+- 페이지 교체 알고리즘
+- 페이지폴트
+- 가상 메모리에 대해 설명해주세요.
+    - 배경
+    - 가상메모리 하는 일
+    - Demanding Paging(요구 페이징)
+- 교착상태(데드락, Deadlock)의 개념과 조건을 설명해주세요.
+- Race Condition
+- 외부 단편화와 내부 단편화에 대해 설명해주세요.
+- PCB
+- Context Switching이 무엇인지 설명하고 과정을 나열해주세요.
+- Swapping에 대해 설명해주세요.
+- IPC(Inter Process Communication)
+### Database
+- 데이터베이스
+    - 데이터베이스를 사용하는 이유
+    - 데이터베이스 성능
+    - 데이터베이스 풀
+- Index
+    - Index 란 무엇인가    
+    - Primary index vs Secondary index
+    - Composite index
+    - Index 의 성능과 고려해야할 사항
+    - Index 의 자료구조는 크게 Hash 인덱스와 B+Tree 인덱스가 있습니다. 이것은 무엇일까요?
+    - 인덱스 Scan 방식은 무엇이 있나요?
+    - 인덱스 설계시 NULL값은 고려되야 할까요?
+- 정규화
+    - 정규화 탄생 배경
+    - 정규화란 무엇인가
+    - 정규화의 종류
+    - 정규화의 장단점
+- 트랜잭션(Transaction)이란 무엇인가?
+    - 트랜잭션과 Lock
+    - 트랜잭션의 특성
+    - 트랜잭션의 상태
+    - 트랜잭션을 사용할 때 주의할 점
+    - 트랜잭션 격리 수준(Transaction Isolation Level)
+    - DBMS 는 어떻게 트랜잭션을 관리할까?
+- NoSQL
+    - NoSQL vs RDBMS    
+    - 저장방식에 따른 분류
+        - Key-Value Model
+        - Document Model
+        - Column Model
+        - Graph Model
+    - CAP 이론
+        - 일관성
+        - 가용성
+        - 네트워크 분할 허용성
+- Key 종류
+- CRUD 
+- SQL Join
+- SQL injection
+- Anomaly
+    - 종류
+    - 설명
+    - 발생 예시
+- Statement와 PrepareStatement
+- 효과적인 쿼리 저장
+- 옵티마이저(Optimizer)란
+- Replication
+- 파티셔닝(Partitioning)
+- 샤딩(Sharding)
+- 객체 관계 매핑(Object-relational mapping, ORM)이란
+- java JDBC
+- Redis
+- PostgreSQL의 장점은 무엇일까요?
+    - postgreSQL vs Elastic Search
+- Nested Loop 조인은 무엇일까요?
+- Windows 함수는 무엇이고 어떻게 작성할까요?
+- KNN 알고리즘을 쿼리로 구현할 수 있을까요?
+- MySQL에서 대량의 데이터(500만개 이상)를 Insert해야하는 경우엔 어떻게 해야할까요?
+- RDB의 char와 varchar의 차이는 무엇일까요?
+- 구글의 BigQuery, AWS의 Redshift는 기존 RDB와 무슨 차이가 있을까요? 왜 빠를까요?
+- 쿼리의 성능을 확인하기 위해 어떤 쿼리문을 작성해야 할까요?
+- MySQL이 요새 느리다는 신고가 들어왔습니다. 첫번째로 무엇을 확인하시고 조정하시겠나요?
+- 동작하는 MySQL에 Alter table을 하면 안되는 이유를 설명해주세요. 그리고 대안을 설명해주세요
+- 빡세게 동작하고 있는 MySQL을 백업뜨기 위해서는 어떤 방법이 필요할까요?
+
+### Network
+- 노트북으로 www.google.com에 접속을 했습니다. 요청을 보내고 받기까지의 과정을 자세히 설명해주세요.
+- OSI 7계층
+    - TCP/IP의 각 계층을 설명해주세요.
+    - OSI 7계층와 TCP/IP 계층의 차이를 설명해주세요.
+- TCP와 UDP의 차이를 설명해주세요.
+- TCP와 UDP의 헤더를 비교해주세요.
+- TCP의 3-way-handshake와 4-way-handshake를 비교 설명해주세요.
+    - Q. TCP의 연결 설정 과정(3단계)과 연결 종료 과정(4단계)이 단계가 차이나는 이유?
+- TCP/IP 흐름제어(flow control) & 혼잡제어(congestion control)
+- Frame, Packet, Segment, Datagram을 비교해주세요.
+- 대칭키 & 공개키
+- 만약 Server에서 FIN 플래그를 전송하기 전에 전송한 패킷이 Routing 지연이나 패킷 유실로 인한 재전송 등으로 인해 FIN 패킷보다 늦게 도착하는 상황이 발생하면 어떻게 될까요?
+- 초기 Sequence Number인 ISN을 0부터 시작하지 않고 난수를 생성해서 설정하는 이유가 무엇인가요?
+- HTTP 요청/응답 헤더의 구조를 설명해주세요.
+- HTTP GET과 POST 메서드를 비교/설명해주세요.
+- - HTTP 문제점
+- HTTP와 HTTPS에 대해서 설명하고 차이점에 대해 설명해주세요.
+    - HTTP와 HTTPS 동작 과정을 비교해주세요.
+- CORS가 무엇인가요?
+- 쿠키(Cookie)와 세션(Session)을 설명해주세요.
+- DNS가 무엇인가요?
+    - DNS round robin 방식
+- 웹 통신 큰 흐름
+- TLS/SSL handshake
+- 로드 밸런싱(Load Balancing)
+- Blocking,Non-blocking I/O & Synchronous,Asynchronous
+- REST와 RESTful의 개념을 설명하고 차이를 말해주세요.
+- 소켓(Socket)이 무엇인가요? 자신 있는 언어로 간단히 소켓 생성 예시를 보여주세요.
+- Socket.io와 WebSocket의 차이를 설명해주세요.
+- IPv4와 IPv6 차이를 설명해주세요.
+- MAC Address가 무엇인가요?
+- 라우터와 스위치, 허브의 차이를 설명해주세요.
+- SMTP가 무엇인가요?
+- 여러 네트워크 topology에 대해 간단히 소개해주세요.
+- subnet mask에 대해서 설명해주세요.
+- data encapsulation이 무엇인가요?
+- DHCP를 설명해주세요.
+- routing protocol을 몇 가지 설명해주세요. (ex. link state, distance vector)
+- 이더넷(ethernet)이 무엇인가요?
+- client와 server의 차이점을 설명해주세요.
+- delay, timing(jitter), throughput 차이를 설명해주세요.
+### Data Structure
+- array
+    - array vs list
+- linked list
+    - single linked list
+    - double linked list
+    - circular linked list    
+- hash table(해시함수, 충돌해결(오픈어드레싱, 세퍼레이트 체이닝), resize)
+    - hash function
+    - collision
+        - open addresing
+            - linear probing
+            - quadratic probing
+        - separate chaining
+            - double hashing
+    -   resize 
+- stack
+- queue
+    - circular queue
+    - dequeue
+- Graph vs Tree
+    - Graph
+        - directed
+        - undirected
+        - adjacency matrix
+        - adjacency list
+        - Graph Traversal: BFS, DFS
+    - Tree
+        - binary tree
+            - full binary tree
+            - complete binary tree
+        - bst(binary search tree)
+- heap(binary heap)
+    - min heap
+    - max heap
+- red-black tree(정의, 특징, 삽입, 삭제)
+- b+ tree & b- tree
+- Trie
+### Algorithm
+- 시간, 공간 복잡도
+- Sort Algorithm
+    - Bubble Sort
+    - Selection Sort
+    - Insertion Sort
+    - Heap Sort
+    - Merge Sort
+    - Quick Sort
+        - 현실에서 quick 소트를 merge보다 많이 쓰는 이유
+    - Counting Sort
+    - Bucket Sort
+    - Lexicographci Sort
+    - Radix Sort
+    - Tim Sort
+    - Tree Sort
+    - Shell Sort
+    - Cube Sort
+- Divide and Conquer
+- Dynamic Programming
+- Greedy Algorithm
+- Binary Heap
+- Shortest Path
+    - Dijkstra
+    - Floyd-Warshall
+    - Bellman-Ford
+    - *A
+- Minimum Spanning Tree
+    - Prim
+    - Kruskal
+- Union-find
+- Topological sort
+- 비트마스크(BitMask)
+- 최장증가수열(LIS)
+- 최소공통조상(LCA)
+- Fibonacci에서의 세 가지(Recursion, Dynamic Programming, 반복) 방식에 대한 시간복잡도와 공간복잡도 차이
+- Factorial for loop vs recursive vs 쪼개서 계산 vs multicore 에서의 작동
+### Computer Architectrue
+- 컴퓨터 구조 기초
+- 컴퓨터의 구성
+- 중앙처리장치(CPU) 작동 원리
+- multicore vs single core
+- 캐시 메모리
+- 패리티 비트 & 해밍 코드
+- ARM 프로세서
+- RAID
+- 고정 소수점 & 부동 소수점
+## Language
+### Python
+- GIL
+- 매크로 사용법
+- List vs Tuple
+- Array vs List
+- PEP8
+- 파이썬 메모리 관리
+- Timsort
+- CPython vs Pypy
+- deep copy vs shallow copy
+- *args, \**kwargs
+- 26 Essential Python Interview Questions from Adeva
+- 20 Python interview questions and answers
+- 11 Essential Python Interview Questions from Toptal
+- A listing of questions that could potentially be asked for a python job listing
+- Interview Questions for both beginners and experts
+- Interview Cake Python Interview Questions
+- Python Frequently Asked Questions (Programming)
+- Python interview questions collected by Reddit users
+- Top 25 Python Interview Questions from Career Guru
+- Python Interview 10 questions from Corey Schafer
+- Python interview questions. Part I. Junior
+- Python interview questions. Part II. Middle
+- Python interview questions. Part III. Senior
+- Python Interview Questions and Answers (2019)
+- 100 Python Interview Questions - Quick Refresher
+- Top 100 Python Interview Questions from Edureka (2021)
+### Java
+### C
+### C++
+### Javascript
+### Spring
+## Web
+## Linux
+## Design Pattern
+## Software Engineering
+
+## Reference
+- https://github.com/WeareSoft/tech-interview?fbclid=IwAR0AhH2t4FhhawIHZJ5BKD35rj6zHZf4Efhh8TIpBtnmCTaO2SOwhlYqBlQ
+- https://github.com/gyoogle/tech-interview-for-developer?fbclid=IwAR2VgV8N6U_xEmFi3hYLWPIZGQ55fhyQNVmswgMKiakby671RxZoKpYHnFQ
+- https://github.com/zzsza/Datascience-Interview-Questions?fbclid=IwAR1sVmRVTTRq73bwxHriYNyxDJG5mJzmtjQB01-jh16OefLFJCQsCyp7lf8
+- https://github.com/boostcamp-ai-tech-4/ai-tech-interview?fbclid=IwAR25-s3Viqwjaj2MSwTHKq7-xYcpirfQKBOaZv_wWLb6XMYFg9Sc_SGfewc#table-of-contents
+- https://github.com/JaeYeopHan/Interview_Question_for_Beginner?fbclid=IwAR2Jw2yOUoN1sKaSRbxHtDP3JmYsjtr548BkH1sNUp7RAIpImAoVQiXAWrw
+- https://github.com/qkraudghgh/coding-interview/blob/master/Interview/question/previous_interview.md
+- https://github.com/Team-Neighborhood/I-want-to-study-Data-Science?fbclid=IwAR23E91-eFv6YhNM_T9-I9CIhFXPXysPRofAg0vFOyHQg0cjlrbWV4Z5xjI
+- https://github.com/jwasham/coding-interview-university
+- https://github.com/DopplerHQ/awesome-interview-questions
