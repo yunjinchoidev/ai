@@ -63,3 +63,13 @@ x = Variable(np.array(0.5))
 # 함성함수를 미분한겨.
 dy = numerical_diff(f, x)
 print(dy)
+
+def f(x):
+    A = Square()
+    B = Exp()
+    C = Square()
+    return C(B(A(x)))
+
+x = Variable(np.array(0.5))
+dy = numerical_diff(f, x)
+print(dy)
